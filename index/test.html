@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SVG Animation</title>
+    <style>
+      /* Add CSS styles here */
+      svg {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: -200px; /* start off-screen to the left */
+        opacity: 0; /* start transparent */
+      }
+      
+      @keyframes example {
+        0% { left: -200px; opacity: 0; }
+        100% { left: 0; opacity: 1; }
+      }
+      
+      .animated {
+        animation: example 2s ease-in-out forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <svg class="animated">
+      <image href="testL3.svg" width="100%" height="100%" />
+    </svg>
+  </body>
+</html>
